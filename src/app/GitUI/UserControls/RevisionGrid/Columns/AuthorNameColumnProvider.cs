@@ -36,7 +36,7 @@ internal sealed class AuthorNameColumnProvider : ColumnProvider
     {
         if (!revision.IsArtificial)
         {
-            Font font = _authorHighlighting.IsHighlighted(revision) ? style.BoldFont : style.NormalFont;
+            Font font = style.NormalFont;
 
             _grid.DrawColumnText(e, (string)e.FormattedValue!, font, style.ForeColor, e.CellBounds.ReduceLeft(ColumnLeftMargin));
         }

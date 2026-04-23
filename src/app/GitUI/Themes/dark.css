@@ -3,67 +3,67 @@
 /* SystemColorMode.Dark listed for reference
 System colors cannot be changed, used when adapting colors (many occurrences are not themeable)
 
-ActiveBorder: ff464646
-ActiveCaption: ff3c5f78
+ActiveBorder: ff3f3f46
+ActiveCaption: ff3c3c3c
 ActiveCaptionText: ffffffff
-AppWorkspace: ff3c3c3c
-ButtonFace: ff202020
-ButtonHighlight: ff101010
-ButtonShadow: ff464646
-Control: ff202020
-ControlDark: ff4a4a4a
-ControlDarkDark: ff5a5a5a
-ControlLight: ff2e2e2e
-ControlLightLight: ff1f1f1f
-ControlText: ffffffff
-Desktop: ff101010
-GradientActiveCaption: ff416482
-GradientInactiveCaption: ff557396
-GrayText: ff969696
-Highlight: ff2864b4
+AppWorkspace: ff252526
+ButtonFace: ff252526
+ButtonHighlight: ff3e3e42
+ButtonShadow: ff3e3e42
+Control: ff252526
+ControlDark: ff2f2f34
+ControlDarkDark: ff1e1e1e
+ControlLight: ff333337
+ControlLightLight: ff45494e
+ControlText: ffcccccc
+Desktop: ff1e1e1e
+GradientActiveCaption: ff3c3c3c
+GradientInactiveCaption: ff2d2d30
+GrayText: ff858585
+Highlight: ff264f78
 HighlightText: ff000000
-HotTrack: ff2d5faf
-InactiveBorder: ff3c3f41
-InactiveCaption: ff374b5a
-InactiveCaptionText: ffbebebe
-Info: ff50503c
-InfoText: ffbebebe
-Menu: ff373737
-MenuBar: ff373737
-MenuHighlight: ff2a80d2
-MenuText: fff0f0f0
-ScrollBar: ff505050
-Window: ff323232
-WindowFrame: ff282828
-WindowText: fff0f0f0
+HotTrack: ff3794ff
+InactiveBorder: ff2d2d30
+InactiveCaption: ff2d2d30
+InactiveCaptionText: ffcccccc
+Info: ff252526
+InfoText: ffcccccc
+Menu: ff252526
+MenuBar: ff252526
+MenuHighlight: ff094771
+MenuText: ffc8c8c8
+ScrollBar: ff3c3c3c
+Window: ff252526
+WindowFrame: ff1e1e1e
+WindowText: ffcccccc
 */
 
 /* Application colors */
 /* PanelBackground sets Windows Dark mode */
-.PanelBackground { color: #323232; }
-.EditorBackground { color: #323232; }
-.LineNumberBackground { color: #323232; }
-.AuthoredHighlight { color: #393920; }
-.Selection { color: #00009b; }
-.HighlightAllOccurences { color: #1d4897; }
-.InactiveSelectionHighlight { color: #436689; }
+.PanelBackground { color: #252526; }
+.EditorBackground { color: #252526; }
+.LineNumberBackground { color: #252526; }
+.AuthoredHighlight { color: #252526; }
+.Selection { color: #37373d; }
+.HighlightAllOccurences { color: #515c6a; }
+.InactiveSelectionHighlight { color: #2d2d30; }
 
-.GraphBranch1 { color: #db5b93; }
-.GraphBranch2 { color: #6fa7d4; }
-.GraphBranch3 { color: #1da31b; }
-.GraphBranch4 { color: #8a67cf; }
-.GraphBranch5 { color: #c02a22; }
-.GraphBranch6 { color: #17aa8f; }
-.GraphBranch7 { color: #ca9b0d; }
+.GraphBranch1 { color: #d16d9e; }
+.GraphBranch2 { color: #569cd6; }
+.GraphBranch3 { color: #4ec9b0; }
+.GraphBranch4 { color: #c586c0; }
+.GraphBranch5 { color: #f44747; }
+.GraphBranch6 { color: #4fc1ff; }
+.GraphBranch7 { color: #dcdcaa; }
 .GraphBranch8 { } /* color not specified, color slot will not be used */
-.GraphNonRelativeBranch { color: #707070; }
+.GraphNonRelativeBranch { color: #5c6370; }
 
-.Branch { color: #7FE28A; }
-.RemoteBranch { color: #fd9797; } /* hsl(0, 100%, 70%) */
-.RemoteBranch.colorblind { color: #0080ff; } /* hsl(210, 100%, 50%) */
-.Tag { color: #40BAF7; }
-.OtherTag { color: #cfb3b3; }
-.DiffSection { color: #5f5e5e; }
+.Branch { color: #8fbf7a; }
+.RemoteBranch { color: #cf6a6a; }
+.RemoteBranch.colorblind { color: #4a8fc8; }
+.Tag { color: #8fbf7a; }
+.OtherTag { color: #757575; }
+.DiffSection { color: #252526; }
 
 /* translation of terminal (cli) ansi color output sequences */
 /* Colors match VS Code Dark terminal ANSI palette */
