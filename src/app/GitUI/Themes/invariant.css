@@ -62,6 +62,9 @@
 .Tag { color: #00008b; }
 .OtherTag { color: #808080; }
 .DiffSection { color: #e6e6e6; }
+.StatusSuccess { color: #80ff80; }
+.StatusWarning { color: #ffff80; }
+.StatusError { color: #ff8080; }
 
 /* translation of terminal (cli) ansi color output sequences */
 /* Partly based on 3/4 bit colors from the "theme" at https://github.com/mintty/mintty/blob/master/themes/helmholtz */
