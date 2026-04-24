@@ -2,7 +2,9 @@
 using GitCommands;
 using GitExtensions.Extensibility.Git;
 using GitExtUtils;
+using GitExtUtils.GitUI.Theming;
 using GitUI.Editor.RichTextBoxExtension;
+using GitUI.Theming;
 using GitUI.UserControls;
 using GitUIPluginInterfaces;
 using ResourceManager;
@@ -24,6 +26,13 @@ public partial class CommitInfoHeader : GitModuleControl
     {
         InitializeComponent();
         InitializeComplete();
+
+        Color contentBackground = ThemeModule.Settings.Theme.GetColor(AppColor.CommitInfoContentBackground);
+        if (!contentBackground.IsEmpty)
+        {
+            BackColor = contentBackground;
+            rtbRevisionHeader.BackColor = contentBackground;
+        }
 
         TabbedHeaderLabelFormatter labelFormatter = new();
         TabbedHeaderRenderStyleProvider headerRenderer = new();

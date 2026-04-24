@@ -15,6 +15,7 @@ using GitExtUtils.GitUI;
 using GitExtUtils.GitUI.Theming;
 using GitUI.CommandsDialogs;
 using GitUI.Editor.RichTextBoxExtension;
+using GitUI.Theming;
 using GitUI.UserControls;
 using GitUIPluginInterfaces;
 using Microsoft;
@@ -104,9 +105,14 @@ public partial class CommitInfo : GitModuleControl
         _gitRevisionExternalLinksParser = new GitRevisionExternalLinksParser(_effectiveLinkDefinitionsProvider, _externalLinkRevisionParser);
         _gitDescribeProvider = new GitDescribeProvider(() => Module);
 
-        Color messageBackground = SystemColors.Window.MakeBackgroundDarkerBy(0.04);
-        pnlCommitMessage.BackColor = messageBackground;
-        rtbxCommitMessage.BackColor = messageBackground;
+        Color background = GetOptionalThemeColor(AppColor.CommitInfoBackground, () => BackColor);
+        Color contentBackground = GetOptionalThemeColor(AppColor.CommitInfoContentBackground, () => SystemColors.Window.MakeBackgroundDarkerBy(0.04));
+        BackColor = background;
+        tableLayout.BackColor = background;
+        commitInfoHeader.BackColor = contentBackground;
+        pnlCommitMessage.BackColor = contentBackground;
+        rtbxCommitMessage.BackColor = contentBackground;
+        RevisionInfo.BackColor = contentBackground;
 
         rtbxCommitMessage.Font = AppSettings.CommitFont;
         RevisionInfo.Font = AppSettings.Font;
@@ -131,6 +137,12 @@ public partial class CommitInfo : GitModuleControl
         // and with Height=0 we won't be receiving any ContentsResizedEvents.
         // To workaround the zero-height - force the min size.
         rtbxCommitMessage.MinimumSize = new(1, 1);
+    }
+
+    private static Color GetOptionalThemeColor(AppColor name, Func<Color> fallback)
+    {
+        Color themeColor = ThemeModule.Settings.Theme.GetColor(name);
+        return themeColor.IsEmpty ? fallback() : themeColor;
     }
 
     /// <summary>

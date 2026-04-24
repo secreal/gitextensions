@@ -171,7 +171,7 @@ public abstract class DiffHighlightService : TextHighlightService
 
         foreach (ISegment segment in GetAllLines(DiffLineType.Plus))
         {
-            textMarkers.Add(CreateTextMarker(segment.Offset, segment.Length, _addedBackColor));
+            textMarkers.Add(CreateTextMarker(segment.Offset, segment.Length, _addedBackColor, SystemColors.WindowText));
         }
 
         foreach (ISegment segment in GetAllLines(DiffLineType.Header))
@@ -412,8 +412,8 @@ public abstract class DiffHighlightService : TextHighlightService
             ? CreateTextMarker(offset, length, ColorHelper.DimColor(ColorHelper.DimColor(isRemoved ? _removedBackColor : _addedBackColor)))
             : new(offset, length, TextMarkerType.SolidBlock, AppColor.EditorBackground.GetThemeColor(), ColorHelper.DimColor(isRemoved ? _removedForeColor : _addedForeColor));
 
-    private static TextMarker CreateTextMarker(int offset, int length, Color color)
-        => new(offset, length, TextMarkerType.SolidBlock, color, ColorHelper.GetForeColorForBackColor(color));
+    private static TextMarker CreateTextMarker(int offset, int length, Color color, Color? foreColor = null)
+        => new(offset, length, TextMarkerType.SolidBlock, color, foreColor ?? ColorHelper.GetForeColorForBackColor(color));
 
     internal class TestAccessor
     {

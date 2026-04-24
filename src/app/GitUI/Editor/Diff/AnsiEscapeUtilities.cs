@@ -404,7 +404,9 @@ public partial class AnsiEscapeUtilities
 
         if (backColor is not null && foreColor is null)
         {
-            foreColor = ColorHelper.GetForeColorForBackColor((Color)backColor);
+            foreColor = currentBack is _greenId or _greenId + _boldOffset
+                ? Get8bitColor(currentBack, fore: true, bold, dim)
+                : ColorHelper.GetForeColorForBackColor((Color)backColor);
         }
 
         // Set result if there are changes
