@@ -2,6 +2,7 @@
 using GitCommands.Git;
 using GitExtensions.Extensibility.Git;
 using GitExtUtils.GitUI.Theming;
+using GitUI.Theming;
 using GitUIPluginInterfaces;
 using ResourceManager;
 
