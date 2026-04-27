@@ -1,4 +1,4 @@
-﻿namespace GitExtUtils.GitUI.Theming;
+namespace GitExtUtils.GitUI.Theming;
 
 /// <summary>
 /// GitExtensions' application specific color names.
@@ -16,6 +16,19 @@ public enum AppColor
     Selection,
     HighlightAllOccurences,
     InactiveSelectionHighlight,
+    CommitInfoBackground,
+    CommitInfoContentBackground,
+    RevisionGridAlternateRowBackground,
+    RevisionGridSelectionBackground,
+    RevisionGridRelativeSelectedText,
+    RevisionGridNonRelativeText,
+    RevisionGridNonRelativeSelectedText,
+    RevisionGridRelativeSelectedBodyText,
+    RevisionGridNonRelativeBodyText,
+    RevisionGridNonRelativeSelectedBodyText,
+    ChecklistStatusSuccess,
+    ChecklistStatusWarning,
+    ChecklistStatusError,
     GraphBranch1,
     GraphBranch2,
     GraphBranch3,

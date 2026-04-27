@@ -129,7 +129,7 @@ public class ThemeLoader : IThemeLoader
     private static Color GetColor(string themeFileName, StyleRule rule)
     {
         string cssColorValue = rule.Style.Color;
-        if (cssColorValue == "" && rule.SelectorText.StartsWith($".{nameof(AppColor.GraphBranch1)[..^1]}"))
+        if (string.IsNullOrWhiteSpace(cssColorValue) && HasOptionalAppColor(rule))
         {
             return Color.Empty;
         }
@@ -165,6 +165,19 @@ public class ThemeLoader : IThemeLoader
         }
 
         return Color.FromArgb(rgbValues[0], rgbValues[1], rgbValues[2]);
+    }
+
+    private static bool HasOptionalAppColor(StyleRule rule)
+    {
+        string selectorText = rule.SelectorText;
+        if (!selectorText.StartsWith(ClassSelector))
+        {
+            return false;
+        }
+
+        string colorName = selectorText[ClassSelector.Length..].Split([ClassSelector], StringSplitOptions.RemoveEmptyEntries)[0];
+        return Enum.TryParse(colorName, out AppColor appColor)
+            && AppColorDefaults.GetBy(appColor).IsEmpty;
     }
 
     private static ThemeException StyleRuleThemeException(StyleRule styleRule, string themePath)

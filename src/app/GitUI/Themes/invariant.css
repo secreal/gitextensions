@@ -46,6 +46,21 @@
 .HighlightAllOccurences { color: #e8e8ff; }
 .InactiveSelectionHighlight { color: #e6e6e6; }
 
+.CommitInfoBackground { }
+.CommitInfoContentBackground { }
+.RevisionGridAlternateRowBackground { }
+.RevisionGridSelectionBackground { }
+.RevisionGridRelativeSelectedText { }
+.RevisionGridNonRelativeText { }
+.RevisionGridNonRelativeSelectedText { }
+.RevisionGridRelativeSelectedBodyText { }
+.RevisionGridNonRelativeBodyText { }
+.RevisionGridNonRelativeSelectedBodyText { }
+
+.ChecklistStatusSuccess { color: #80ff80; }
+.ChecklistStatusWarning { color: #ffff80; }
+.ChecklistStatusError { color: #ff8080; }
+
 .GraphBranch1 { color: #f064a0; }
 .GraphBranch2 { color: #78b4e6; }
 .GraphBranch3 { color: #24c221; }

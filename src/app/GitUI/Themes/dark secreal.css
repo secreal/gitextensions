@@ -1,0 +1,33 @@
+/* See (App install)\Themes\README.md for instructions on how to create or modify a theme */
+
+@import url("dark.css");
+
+/* Application colors */
+.PanelBackground { color: #252526; }
+.EditorBackground { color: #252526; }
+.LineNumberBackground { color: #252526; }
+.AuthoredHighlight { color: #1f1f1f; }
+.Selection { color: #37373d; }
+.HighlightAllOccurences { color: #515c6a; }
+.InactiveSelectionHighlight { color: #2d2d30; }
+
+.CommitInfoBackground { color: #252526; }
+.CommitInfoContentBackground { color: #252526; }
+
+.RevisionGridAlternateRowBackground { color: #252526; }
+.RevisionGridSelectionBackground { color: #37373d; }
+.RevisionGridRelativeSelectedText { color: #ffffff; }
+.RevisionGridNonRelativeText { color: #7b7b7b; }
+.RevisionGridNonRelativeSelectedText { color: #ffffff; }
+.RevisionGridRelativeSelectedBodyText { color: #cccccc; }
+.RevisionGridNonRelativeBodyText { color: #555555; }
+.RevisionGridNonRelativeSelectedBodyText { color: #cccccc; }
+
+.ChecklistStatusSuccess { color: #0f9d58; }
+.ChecklistStatusWarning { color: #fdd835; }
+.ChecklistStatusError { color: #db4437; }
+
+.Branch { color: #8ab878; }
+.RemoteBranch { color: #c96767; }
+.Tag { color: #8ab878; }
+.OtherTag { color: #7b7b7b; }
