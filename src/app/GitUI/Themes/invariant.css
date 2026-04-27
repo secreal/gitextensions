@@ -46,6 +46,19 @@
 .HighlightAllOccurences { color: #e8e8ff; }
 .InactiveSelectionHighlight { color: #e6e6e6; }
 
+.ChecklistStatusSuccess { color: #80ff80; }
+.ChecklistStatusWarning { color: #ffff80; }
+.ChecklistStatusError { color: #ff8080; }
+
+.ResetSoftBackground { color: #80ff80; }
+.ResetMixedBackground { color: #ffff80; }
+.ResetHardBackground { color: #ff8080; }
+
+.SummaryTagBackground { color: #b0c4de; } /* LightSteelBlue */
+.SummaryBranchBackground { color: #ffa07a; } /* LightSalmon */
+.InteractiveActionBackground { color: #87ceeb; } /* LightSkyBlue */
+.InteractiveActionErrorBackground { color: #ffa500; } /* Orange */
+
 .GraphBranch1 { color: #f064a0; }
 .GraphBranch2 { color: #78b4e6; }
 .GraphBranch3 { color: #24c221; }
@@ -53,7 +66,6 @@
 .GraphBranch5 { color: #dd3228; }
 .GraphBranch6 { color: #1ac6a6; }
 .GraphBranch7 { color: #e7b00f; }
-.GraphBranch8 { } /* color not specified, color slot will not be used */
 .GraphNonRelativeBranch { color: #d3d3d3; }
 
 .Branch { color: #008000; }

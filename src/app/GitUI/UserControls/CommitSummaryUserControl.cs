@@ -1,5 +1,6 @@
 ﻿using GitExtensions.Extensibility.Git;
 using GitExtUtils.GitUI.Theming;
+using GitUI.Theming;
 using GitUIPluginInterfaces;
 using ResourceManager;
 using ResourceManager.CommitDataRenders;
@@ -18,8 +19,8 @@ public partial class CommitSummaryUserControl : GitExtensionsControl
     private readonly IDateFormatter _dateFormatter = new DateFormatter();
     private readonly string _tagsCaption;
     private readonly string _branchesCaption;
-    private readonly Color _tagsBackColor = Color.LightSteelBlue.AdaptBackColor();
-    private readonly Color _branchesBackColor = Color.LightSalmon.AdaptBackColor();
+    private readonly Color _tagsBackColor = AppColor.SummaryTagBackground.GetThemeColor(Color.LightSteelBlue.AdaptBackColor());
+    private readonly Color _branchesBackColor = AppColor.SummaryBranchBackground.GetThemeColor(Color.LightSalmon.AdaptBackColor());
     private GitRevision? _revision;
 
     private readonly int _messageY;
