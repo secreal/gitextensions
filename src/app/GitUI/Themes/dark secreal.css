@@ -27,6 +27,15 @@
 .ChecklistStatusWarning { color: #fdd835; }
 .ChecklistStatusError { color: #db4437; }
 
+.ResetSoftBackground { color: #0f9d58; }
+.ResetMixedBackground { color: #fdd835; }
+.ResetHardBackground { color: #db4437; }
+
+.SummaryTagBackground { color: #3e3e42; }
+.SummaryBranchBackground { color: #3e3e42; }
+.InteractiveActionBackground { color: #007acc; }
+.InteractiveActionErrorBackground { color: #db4437; }
+
 .Branch { color: #8ab878; }
 .RemoteBranch { color: #c96767; }
 .Tag { color: #8ab878; }

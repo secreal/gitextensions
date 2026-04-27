@@ -4,6 +4,7 @@ using GitExtUtils.GitUI.Theming;
 using GitUI.CommandsDialogs;
 using GitUI.CommandsDialogs.BrowseDialog;
 using GitUI.HelperDialogs;
+using GitUI.Theming;
 using ResourceManager;
 
 namespace GitUI.UserControls;
@@ -128,7 +129,8 @@ public partial class InteractiveGitActionControl : GitModuleControl
         }
 
         IconBox.Image = _hasConflicts ? Properties.Images.SolveMerge : Properties.Resources.information;
-        BackColor = (_hasConflicts ? System.Drawing.Color.Orange : System.Drawing.Color.LightSkyBlue).AdaptBackColor();
+        Color actionColor = (_hasConflicts ? AppColor.InteractiveActionErrorBackground : AppColor.InteractiveActionBackground).GetThemeColor(_hasConflicts ? System.Drawing.Color.Orange : System.Drawing.Color.LightSkyBlue);
+        BackColor = actionColor.AdaptBackColor();
         TextLabel.SetForeColorForBackColor();
 
         string actionStr = "";

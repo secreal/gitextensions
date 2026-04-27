@@ -31,10 +31,20 @@ public partial class FormResetCurrentBranch : GitModuleForm
         Revision = revision;
 
         InitializeComponent();
+        Soft.BackColor = AppColor.ResetSoftBackground.GetThemeColor(OtherColors.BrightGreen);
         Soft.SetForeColorForBackColor();
+
+        Color mixedColor = AppColor.ResetMixedBackground.GetThemeColor(OtherColors.BrightYellow);
+        Mixed.BackColor = mixedColor;
         Mixed.SetForeColorForBackColor();
+
+        Keep.BackColor = mixedColor;
         Keep.ForeColor = Mixed.ForeColor;
+
+        Merge.BackColor = mixedColor;
         Merge.ForeColor = Mixed.ForeColor;
+
+        Hard.BackColor = AppColor.ResetHardBackground.GetThemeColor(OtherColors.BrightRed);
         Hard.SetForeColorForBackColor();
         InitializeComplete();
 
