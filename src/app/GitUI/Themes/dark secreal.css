@@ -1,41 +1,45 @@
 /* See (App install)\Themes\README.md for instructions on how to create or modify a theme */
 
-/* System colors */
-.ActiveBorder { color: #3f3f46; }
-.ActiveCaption { color: #3c3c3c; }
-.ActiveCaptionText { color: #ffffff; }
-.AppWorkspace { color: #252526; }
-.ButtonFace { color: #252526; }
-.ButtonHighlight { color: #3e3e42; }
-.ButtonShadow { color: #3e3e42; }
-.Control { color: #252526; }
-.ControlDark { color: #2f2f34; }
-.ControlDarkDark { color: #1e1e1e; }
-.ControlLight { color: #333337; }
-.ControlLightLight { color: #45494e; }
-.ControlText { color: #cccccc; }
-.Desktop { color: #1e1e1e; }
-.GradientActiveCaption { color: #3c3c3c; }
-.GradientInactiveCaption { color: #2d2d30; }
-.GrayText { color: #858585; }
-.Highlight { color: #264f78; }
-.HighlightText { color: #000000; }
-.HotTrack { color: #3794ff; }
-.InactiveBorder { color: #2d2d30; }
-.InactiveCaption { color: #2d2d30; }
-.InactiveCaptionText { color: #cccccc; }
-.Info { color: #252526; }
-.InfoText { color: #cccccc; }
-.Menu { color: #252526; }
-.MenuBar { color: #252526; }
-.MenuHighlight { color: #094771; }
-.MenuText { color: #c8c8c8; }
-.ScrollBar { color: #3c3c3c; }
-.Window { color: #252526; }
-.WindowFrame { color: #1e1e1e; }
-.WindowText { color: #cccccc; }
+/* SystemColorMode.Dark listed for reference
+System colors cannot be changed, used when adapting colors (many occurrences are not themeable)
+
+ActiveBorder: ff464646
+ActiveCaption: ff3c5f78
+ActiveCaptionText: ffffffff
+AppWorkspace: ff3c3c3c
+ButtonFace: ff202020
+ButtonHighlight: ff101010
+ButtonShadow: ff464646
+Control: ff202020
+ControlDark: ff4a4a4a
+ControlDarkDark: ff5a5a5a
+ControlLight: ff2e2e2e
+ControlLightLight: ff1f1f1f
+ControlText: ffffffff
+Desktop: ff101010
+GradientActiveCaption: ff416482
+GradientInactiveCaption: ff557396
+GrayText: ff969696
+Highlight: ff2864b4
+HighlightText: ff000000
+HotTrack: ff2d5faf
+InactiveBorder: ff3c3f41
+InactiveCaption: ff374b5a
+InactiveCaptionText: ffbebebe
+Info: ff50503c
+InfoText: ffbebebe
+Menu: ff373737
+MenuBar: ff373737
+MenuHighlight: ff2a80d2
+MenuText: fff0f0f0
+ScrollBar: ff505050
+Window: ff323232
+WindowFrame: ff282828
+WindowText: fff0f0f0
+*/
 
 /* Application colors */
+/* PanelBackground sets Windows Dark mode */
 .PanelBackground { color: #252526; }
 .EditorBackground { color: #252526; }
 .LineNumberBackground { color: #252526; }
@@ -44,34 +48,26 @@
 .HighlightAllOccurences { color: #515c6a; }
 .InactiveSelectionHighlight { color: #2d2d30; }
 
-.GraphBranch1 { color: #d16d9e; }
-.GraphBranch2 { color: #569cd6; }
-.GraphBranch3 { color: #4ec9b0; }
-.GraphBranch4 { color: #c586c0; }
-.GraphBranch5 { color: #f44747; }
-.GraphBranch6 { color: #4fc1ff; }
-.GraphBranch7 { color: #dcdcaa; }
-.GraphNonRelativeBranch { color: #5c6370; }
+.GraphBranch1 { color: #db5b93; }
+.GraphBranch2 { color: #6fa7d4; }
+.GraphBranch3 { color: #1da31b; }
+.GraphBranch4 { color: #8a67cf; }
+.GraphBranch5 { color: #c02a22; }
+.GraphBranch6 { color: #17aa8f; }
+.GraphBranch7 { color: #ca9b0d; }
+.GraphBranch8 { } /* color not specified, color slot will not be used */
+.GraphNonRelativeBranch { color: #707070; }
 
 .Branch { color: #8ab878; }
 .RemoteBranch { color: #c96767; }
-.RemoteBranch.colorblind { color: #4a8fc8; }
 .Tag { color: #8ab878; }
 .OtherTag { color: #7b7b7b; }
-.DiffSection { color: #252526; }
+.DiffSection { color: #5f5e5e; }
 
-.CommitInfoBackground { color: #252526; }
-.CommitInfoContentBackground { color: #252526; }
-.RevisionGridAlternateRowBackground { color: #252526; }
-.RevisionGridSelectionBackground { color: #37373d; }
-.RevisionGridRelativeSelectedText { color: #cccccc; }
-.RevisionGridNonRelativeText { color: #989898; }
-.RevisionGridNonRelativeSelectedText { color: #cccccc; }
-.RevisionGridRelativeSelectedBodyText { color: #b0b0b0; }
-.RevisionGridNonRelativeBodyText { color: #7a7a7a; }
-.RevisionGridNonRelativeSelectedBodyText { color: #b0b0b0; }
+/* translation of terminal (cli) ansi color output sequences */
+/* Colors match VS Code Dark terminal ANSI palette */
+/* https://github.com/microsoft/vscode/blob/main/src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts */
 
-/* Terminal / diff colors */
 .AnsiTerminalBlackForeNormal { color: #000000; }
 .AnsiTerminalBlackBackNormal { color: #4d4d4d; }
 .AnsiTerminalBlackForeBold { color: #666666; }
@@ -114,6 +110,18 @@
 .AnsiTerminalWhiteForeBold { color: #e5e5e5; }
 .AnsiTerminalWhiteBackBold { color: #e5e5e5; }
 
+.CommitInfoBackground { color: #252526; }
+.CommitInfoContentBackground { color: #252526; }
+
+.RevisionGridAlternateRowBackground { color: #252526; }
+.RevisionGridSelectionBackground { color: #37373d; }
+.RevisionGridRelativeSelectedText { color: #ffffff; }
+.RevisionGridNonRelativeText { color: #7b7b7b; }
+.RevisionGridNonRelativeSelectedText { color: #ffffff; }
+.RevisionGridRelativeSelectedBodyText { color: #cccccc; }
+.RevisionGridNonRelativeBodyText { color: #555555; }
+.RevisionGridNonRelativeSelectedBodyText { color: #cccccc; }
+
 .ChecklistStatusSuccess { color: #0f9d58; }
 .ChecklistStatusWarning { color: #fdd835; }
 .ChecklistStatusError { color: #db4437; }
@@ -122,7 +130,3 @@
 .ResetMixedBackground { color: #fdd835; }
 .ResetHardBackground { color: #db4437; }
 
-.SummaryTagBackground { color: #3e3e42; }
-.SummaryBranchBackground { color: #3e3e42; }
-.InteractiveActionBackground { color: #007acc; }
-.InteractiveActionErrorBackground { color: #db4437; }
