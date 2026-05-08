@@ -115,18 +115,14 @@ WindowText: fff0f0f0
 
 .RevisionGridAlternateRowBackground { color: #252526; }
 .RevisionGridSelectionBackground { color: #37373d; }
-.RevisionGridRelativeSelectedText { color: #ffffff; }
-.RevisionGridNonRelativeText { color: #7b7b7b; }
-.RevisionGridNonRelativeSelectedText { color: #ffffff; }
+.RevisionGridRelativeNonSelectedSubjectText { color: #ffffff; }
+.RevisionGridNonRelativeNonSelectedSubjectText { color: #7b7b7b; }
+.RevisionGridNonRelativeSelectedSubjectText { color: #ffffff; }
 .RevisionGridRelativeSelectedBodyText { color: #cccccc; }
 .RevisionGridNonRelativeBodyText { color: #555555; }
 .RevisionGridNonRelativeSelectedBodyText { color: #cccccc; }
 
-.ChecklistStatusSuccess { color: #0f9d58; }
-.ChecklistStatusWarning { color: #fdd835; }
-.ChecklistStatusError { color: #db4437; }
-
-.ResetSoftBackground { color: #0f9d58; }
-.ResetMixedBackground { color: #fdd835; }
-.ResetHardBackground { color: #db4437; }
+.BrightGreen { color: #0f9d58; }
+.BrightYellow { color: #fdd835; }
+.BrightRed { color: #db4437; }
 
