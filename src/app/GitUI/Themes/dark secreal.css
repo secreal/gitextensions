@@ -110,7 +110,6 @@ WindowText: fff0f0f0
 .AnsiTerminalWhiteForeBold { color: #e5e5e5; }
 .AnsiTerminalWhiteBackBold { color: #e5e5e5; }
 
-.CommitInfoBackground { color: #252526; }
 .CommitInfoContentBackground { color: #252526; }
 
 .RevisionGridAlternateRowBackground { color: #252526; }
